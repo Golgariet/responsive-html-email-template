@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #f6f9fc;
 }
 
 table {
@@ -13,6 +14,113 @@ td {
 
 img {
   border: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #388cda;
+  font-size: 16px;
+}
+
+.wrapper {
+  width: 100%;
+  table-layout: fixed;
+  background-color: #f6f9fc;
+  padding-bottom: 40px;
+}
+
+.webkit {
+  max-width: 600px;
+  background-color: #ffffff;
+}
+
+.outer {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+  border-spacing: 0;
+  font-family: sans-serif;
+  color: #4a4a4a;
+}
+
+.initial {
+  width: 100%;
+  border-spacing: 0;
+}
+
+.bg {
+  background-color: #388cda;
+  padding: 10px;
+  text-align: center;
+}
+
+.logo {
+  width: 200px;
+}
+
+.main {
+  width: 600px;
+  max-width: 100%;
+}
+
+.arc {
+  width: 150px;
+  max-width: 150px;
+}
+
+.three-columns {
+  text-align: center;
+  font-size: 0;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.three-columns .column {
+  width: 100%;
+  max-width: 200px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.padding {
+  padding: 25px;
+}
+
+.add {
+  width: 100%;
+  border-spacing: 0;
+}
+
+.three-columns .add {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.m-text {
+  padding: 10px;
+  justify-content: center;
+}
+
+.text-ref {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.footer-s {
+  width: 100%;
+  border-spacing: 0;
+}
+
+.footer-c {
+  background-color: #388cda;
+  padding: 15px;
+  text-align: center;
+}
+
+.footer-p {
+  font-size: 18px;
+  color: #ffffff;
+  margin: 13px;
 }
 
 @media screen and (max-width: 600px) {
