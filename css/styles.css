@@ -123,6 +123,54 @@ a {
   margin: 13px;
 }
 
+.social {
+  width: 30px;
+}
+
+.footer-sub {
+  background-color: #efefef;
+}
+
+.footer-end {
+  width: 100%;
+  border-spacing: 0;
+}
+
+.represent-sb {
+  padding: 20px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.represent {
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-arcade {
+  width: 160px;
+}
+
+.footer-name {
+  font-size: 16px;
+  margin-top: 18px;
+  margin-bottom: 10px;
+}
+.subs {
+  font-size: 13px;
+  padding-bottom: 25px;
+}
+
+.small {
+  height: 20px;
+  background-color: #388cda;
+}
+
+/* .footer-str {
+  font-size: 16px;
+  margin-top: 18px;
+} */
+
 @media screen and (max-width: 600px) {
 }
 
