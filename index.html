@@ -3,16 +3,137 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
     <title>Responsive HTML Email</title>
   </head>
-  <body>
-    <center class="wrapper">
-      <div class="webkit">
-        <table class="outer" align="center">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f6f9fc;
+    }
+
+    table {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 600px;
+      border-spacing: 0;
+      color: #4a4a4a;
+    }
+
+    td {
+      padding: 0;
+    }
+
+    img {
+      border: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: #388cda;
+      font-size: 16px;
+    }
+
+    .wrapper {
+      width: 100%;
+      table-layout: fixed;
+      background-color: #f6f9fc;
+      padding-bottom: 40px;
+    }
+
+    .webkit {
+      max-width: 600px;
+      background-color: #ffffff;
+    }
+
+    .outer {
+      /* margin: 0 auto;
+  width: 100%;
+  max-width: 600px; */
+      /* border-spacing: 0; */
+      font-family: sans-serif;
+      color: #4a4a4a;
+    }
+
+    .three-columns {
+      text-align: center;
+      font-size: 0;
+      padding-top: 40px;
+      padding-bottom: 30px;
+    }
+
+    .three-columns .column {
+      width: 100%;
+      max-width: 200px;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .padding {
+      padding: 25px;
+    }
+
+    .three-columns .content {
+      font-size: 15px;
+      line-height: 20px;
+    }
+
+    @media screen and (max-width: 600px) {
+      img.third-img-last {
+        width: 200px !important;
+        max-width: 200px !important;
+      }
+
+      .padding {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      img.third-img {
+        width: 200px !important;
+        max-width: 200px !important;
+      }
+    }
+  </style>
+
+  <body style="margin: 0; padding: 0; background-color: #f6f9fc">
+    <center
+      class="wrapper"
+      style="
+        width: 100%;
+        table-layout: fixed;
+        background-color: #f6f9fc;
+        padding-bottom: 40px;
+      "
+    >
+      <div class="webkit" style="max-width: 600px; background-color: #ffffff">
+        <table
+          class="outer"
+          align="center"
+          style="
+            margin: 0 auto;
+            width: 100%;
+            max-width: 600px;
+            border-spacing: 0;
+            color: #4a4a4a;
+            font-family: sans-serif;
+          "
+        >
           <tr>
-            <td>
-              <table width="100%" style="border-spacing: 0">
+            <td style="padding: 0">
+              <table
+                width="100%"
+                style="
+                  border-spacing: 0;
+                  margin: 0 auto;
+                  width: 100%;
+                  max-width: 600px;
+                  color: #4a4a4a;
+                "
+              >
                 <tr>
                   <td
                     style="
@@ -21,12 +142,19 @@
                       text-align: center;
                     "
                   >
-                    <a href="http://github.com"
+                    <a
+                      href="http://github.com"
+                      style="
+                        text-decoration: none;
+                        color: #388cda;
+                        font-size: 16px;
+                      "
                       ><img
                         src="images/app-arcade.png"
                         alt="Logo"
                         title="Logo"
                         width="180"
+                        style="border: 0"
                     /></a>
                   </td>
                 </tr>
@@ -35,34 +163,83 @@
           </tr>
 
           <tr>
-            <td>
-              <a href="http://github.com"
+            <td style="padding: 0">
+              <a
+                href="http://github.com"
+                style="text-decoration: none; color: #388cda; font-size: 16px"
                 ><img
                   src="images/arcade.jpg"
                   alt="Main"
                   width="600"
-                  style="max-width: 100%"
+                  style="max-width: 100%; border: 0"
               /></a>
             </td>
           </tr>
 
           <tr>
-            <td>
-              <table width="100%" style="border-spacing: 0">
+            <td style="padding: 0">
+              <table
+                width="100%"
+                style="
+                  border-spacing: 0;
+                  margin: 0 auto;
+                  width: 100%;
+                  max-width: 600px;
+                  color: #4a4a4a;
+                "
+              >
                 <tr>
-                  <td class="three-columns">
-                    <table class="column">
+                  <td
+                    class="three-columns"
+                    style="
+                      padding: 0;
+                      text-align: center;
+                      font-size: 0;
+                      padding-top: 40px;
+                      padding-bottom: 30px;
+                    "
+                  >
+                    <table
+                      class="column"
+                      style="
+                        margin: 0 auto;
+                        width: 100%;
+                        max-width: 200px;
+                        border-spacing: 0;
+                        color: #4a4a4a;
+                        display: inline-block;
+                        vertical-align: top;
+                      "
+                    >
                       <tr>
-                        <td class="padding">
-                          <table class="content">
+                        <td class="padding" style="padding: 25px">
+                          <table
+                            class="content"
+                            style="
+                              margin: 0 auto;
+                              width: 100%;
+                              max-width: 600px;
+                              border-spacing: 0;
+                              color: #4a4a4a;
+                              font-size: 15px;
+                              line-height: 20px;
+                            "
+                          >
                             <tr>
-                              <td>
-                                <a href="#"
+                              <td style="padding: 0">
+                                <a
+                                  href="#"
+                                  style="
+                                    text-decoration: none;
+                                    color: #388cda;
+                                    font-size: 16px;
+                                  "
                                   ><img
                                     src="images/arc-2.jpg"
                                     alt=""
                                     width="150"
-                                    style="max-width: 150px"
+                                    style="max-width: 150px; border: 0"
+                                    class="third-img"
                                 /></a>
                               </td>
                             </tr>
@@ -76,7 +253,15 @@
                                   Lorem ipsum dolor sit amet consectetur
                                   adipisicing elit. Tenetur earum laboriosam
                                 </p>
-                                <a href="#">Learn more..</a>
+                                <a
+                                  href="#"
+                                  style="
+                                    text-decoration: none;
+                                    color: #388cda;
+                                    font-size: 16px;
+                                  "
+                                  >Learn more..</a
+                                >
                               </td>
                             </tr>
                           </table>
@@ -84,18 +269,47 @@
                       </tr>
                     </table>
 
-                    <table class="column">
+                    <table
+                      class="column"
+                      style="
+                        margin: 0 auto;
+                        width: 100%;
+                        max-width: 200px;
+                        border-spacing: 0;
+                        color: #4a4a4a;
+                        display: inline-block;
+                        vertical-align: top;
+                      "
+                    >
                       <tr>
-                        <td class="padding">
-                          <table class="content">
+                        <td class="padding" style="padding: 25px">
+                          <table
+                            class="content"
+                            style="
+                              margin: 0 auto;
+                              width: 100%;
+                              max-width: 600px;
+                              border-spacing: 0;
+                              color: #4a4a4a;
+                              font-size: 15px;
+                              line-height: 20px;
+                            "
+                          >
                             <tr>
-                              <td>
-                                <a href="#"
+                              <td style="padding: 0">
+                                <a
+                                  href="#"
+                                  style="
+                                    text-decoration: none;
+                                    color: #388cda;
+                                    font-size: 16px;
+                                  "
                                   ><img
                                     src="images/arc-3.jpg"
                                     alt=""
                                     width="150"
-                                    style="max-width: 150px"
+                                    style="max-width: 150px; border: 0"
+                                    class="third-img"
                                 /></a>
                               </td>
                             </tr>
@@ -109,7 +323,15 @@
                                   Lorem ipsum dolor sit amet consectetur
                                   adipisicing elit. Tenetur earum laboriosam
                                 </p>
-                                <a href="#">Learn more..</a>
+                                <a
+                                  href="#"
+                                  style="
+                                    text-decoration: none;
+                                    color: #388cda;
+                                    font-size: 16px;
+                                  "
+                                  >Learn more..</a
+                                >
                               </td>
                             </tr>
                           </table>
@@ -117,18 +339,47 @@
                       </tr>
                     </table>
 
-                    <table class="column">
+                    <table
+                      class="column"
+                      style="
+                        margin: 0 auto;
+                        width: 100%;
+                        max-width: 200px;
+                        border-spacing: 0;
+                        color: #4a4a4a;
+                        display: inline-block;
+                        vertical-align: top;
+                      "
+                    >
                       <tr>
-                        <td class="padding">
-                          <table class="content">
+                        <td class="padding" style="padding: 25px">
+                          <table
+                            class="content"
+                            style="
+                              margin: 0 auto;
+                              width: 100%;
+                              max-width: 600px;
+                              border-spacing: 0;
+                              color: #4a4a4a;
+                              font-size: 15px;
+                              line-height: 20px;
+                            "
+                          >
                             <tr>
-                              <td>
-                                <a href="#"
+                              <td style="padding: 0">
+                                <a
+                                  href="#"
+                                  style="
+                                    text-decoration: none;
+                                    color: #388cda;
+                                    font-size: 16px;
+                                  "
                                   ><img
                                     src="images/arc-1.jpg"
                                     alt=""
                                     width="150"
-                                    style="max-width: 150px"
+                                    style="max-width: 150px; border: 0"
+                                    class="third-img-last"
                                 /></a>
                               </td>
                             </tr>
@@ -142,7 +393,15 @@
                                   Lorem ipsum dolor sit amet consectetur
                                   adipisicing elit. Tenetur earum laboriosam
                                 </p>
-                                <a href="#">Learn more..</a>
+                                <a
+                                  href="#"
+                                  style="
+                                    text-decoration: none;
+                                    color: #388cda;
+                                    font-size: 16px;
+                                  "
+                                  >Learn more..</a
+                                >
                               </td>
                             </tr>
                           </table>
@@ -156,8 +415,17 @@
           </tr>
 
           <tr>
-            <td>
-              <table width="100%" style="border-spacing: 0">
+            <td style="padding: 0">
+              <table
+                width="100%"
+                style="
+                  border-spacing: 0;
+                  margin: 0 auto;
+                  width: 100%;
+                  max-width: 600px;
+                  color: #4a4a4a;
+                "
+              >
                 <tr>
                   <td
                     style="
@@ -175,20 +443,70 @@
                     >
                       Connect with us
                     </p>
-                    <a href="#"
-                      ><img src="images/vid-2.png" alt="" width="30"
+                    <a
+                      href="#"
+                      style="
+                        text-decoration: none;
+                        color: #388cda;
+                        font-size: 16px;
+                      "
+                      ><img
+                        src="images/vid-2.png"
+                        alt=""
+                        width="30"
+                        style="border: 0"
                     /></a>
-                    <a href="#"
-                      ><img src="images/vid-5.png" alt="" width="30"
+                    <a
+                      href="#"
+                      style="
+                        text-decoration: none;
+                        color: #388cda;
+                        font-size: 16px;
+                      "
+                      ><img
+                        src="images/vid-5.png"
+                        alt=""
+                        width="30"
+                        style="border: 0"
                     /></a>
-                    <a href="#"
-                      ><img src="images/vid-3.png" alt="" width="30"
+                    <a
+                      href="#"
+                      style="
+                        text-decoration: none;
+                        color: #388cda;
+                        font-size: 16px;
+                      "
+                      ><img
+                        src="images/vid-3.png"
+                        alt=""
+                        width="30"
+                        style="border: 0"
                     /></a>
-                    <a href="#"
-                      ><img src="images/vid-1.png" alt="" width="30"
+                    <a
+                      href="#"
+                      style="
+                        text-decoration: none;
+                        color: #388cda;
+                        font-size: 16px;
+                      "
+                      ><img
+                        src="images/vid-1.png"
+                        alt=""
+                        width="30"
+                        style="border: 0"
                     /></a>
-                    <a href="#"
-                      ><img src="images/vid-4.png" alt="" width="30"
+                    <a
+                      href="#"
+                      style="
+                        text-decoration: none;
+                        color: #388cda;
+                        font-size: 16px;
+                      "
+                      ><img
+                        src="images/vid-4.png"
+                        alt=""
+                        width="30"
+                        style="border: 0"
                     /></a>
                   </td>
                 </tr>
@@ -197,8 +515,17 @@
           </tr>
 
           <tr>
-            <td style="background-color: #efefef">
-              <table width="100%" style="border-spacing: 0">
+            <td style="background-color: #efefef; padding: 0">
+              <table
+                width="100%"
+                style="
+                  border-spacing: 0;
+                  margin: 0 auto;
+                  width: 100%;
+                  max-width: 600px;
+                  color: #4a4a4a;
+                "
+              >
                 <tr>
                   <td
                     style="
@@ -207,8 +534,18 @@
                       padding-bottom: 10px;
                     "
                   >
-                    <a href="#"
-                      ><img src="images/app-arcade-bl.png" alt="" width="160"
+                    <a
+                      href="#"
+                      style="
+                        text-decoration: none;
+                        color: #388cda;
+                        font-size: 16px;
+                      "
+                      ><img
+                        src="images/app-bl-1.png"
+                        alt=""
+                        width="160"
+                        style="border: 0"
                     /></a>
 
                     <p
@@ -220,23 +557,54 @@
                       Ilukstes 101-10 Riga Street, LV-10232324
                     </p>
                     <p>
-                      <a href="mailto:nathgitl@gmail.com">nathgilt@gmail.com</a>
+                      <a
+                        href="mailto:nathgitl@gmail.com"
+                        style="
+                          text-decoration: none;
+                          color: #388cda;
+                          font-size: 16px;
+                        "
+                        >nathgilt@gmail.com</a
+                      >
                     </p>
-                    <p><a href="tel:2-717-080-808">2-717-008-808</a></p>
+                    <p>
+                      <a
+                        href="tel:2-717-080-808"
+                        style="
+                          text-decoration: none;
+                          color: #388cda;
+                          font-size: 16px;
+                        "
+                        >2-717-008-808</a
+                      >
+                    </p>
                   </td>
                 </tr>
 
                 <tr>
                   <td
                     align="center"
-                    style="padding-bottom: 25px; text-align: center"
+                    style="padding-bottom: 25px; text-align: center; padding: 0"
                   >
-                    <p><a style="font-size: 13px" href="#">UNSUBSCRIBE</a></p>
+                    <p>
+                      <a
+                        style="
+                          font-size: 13px;
+                          text-decoration: none;
+                          color: #388cda;
+                        "
+                        href="#"
+                        >UNSUBSCRIBE</a
+                      >
+                    </p>
                   </td>
                 </tr>
 
                 <tr>
-                  <td height="20" style="background-color: #388cda"></td>
+                  <td
+                    height="20"
+                    style="background-color: #388cda; padding: 0"
+                  ></td>
                 </tr>
               </table>
             </td>
